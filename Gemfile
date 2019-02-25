@@ -38,6 +38,7 @@ gem "mail" # for parsing incoming mail
 gem "sitemap_generator" # for better search engine indexing
 
 gem "ruumba"
+gem 'mailgun-ruby', '~>1.1.6'
 
 group :test, :development do
   gem 'bullet'
