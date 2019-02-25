@@ -26,5 +26,5 @@ if Rails.env.production?
 
   BCrypt::Engine.cost = 12
 
-  ActionMailer::Base.delivery_method = :sendmail
+  ActionMailer::Base.delivery_method = :mailgun
 end
