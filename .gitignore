@@ -4,6 +4,8 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+.DS_Store
+
 # Ignore bundler config.
 /.bundle
 
@@ -32,7 +34,6 @@ app/views/home/chat.*
 app/views/home/404.*
 app/views/layouts/_footer.*
 app/assets/stylesheets/local/*
-public/favicon.ico
 public/apple-touch-icon*
 
 # files added in production
