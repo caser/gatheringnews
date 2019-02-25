@@ -16,10 +16,10 @@ if Rails.env.production?
 
   # StoryCacher.DIFFBOT_API_KEY = "secret"
 
-  # Twitter.CONSUMER_KEY = "secret"
-  # Twitter.CONSUMER_SECRET = "secret"
-  # Twitter.AUTH_TOKEN = "secret"
-  # Twitter.AUTH_SECRET = "secret"
+  Twitter.CONSUMER_KEY = ENV.fetch('TWITTER_CONSUMER_KEY', 'secret')
+  Twitter.CONSUMER_SECRET = ENV.fetch('TWITTER_CONSUMER_SECRET', 'secret')
+  Twitter.AUTH_TOKEN = ENV.fetch('TWITTER_AUTH_TOKEN', 'secret')
+  Twitter.AUTH_SECRET = ENV.fetch('TWITTER_AUTH_SECRET', 'secret')
 
   # Github.CLIENT_ID = "secret"
   # Github.CLIENT_SECRET = "secret"
