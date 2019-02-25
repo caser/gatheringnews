@@ -116,3 +116,5 @@ class << Rails.application
     true
   end
 end
+
+Rails.application.routes.default_url_options[:host] = Rails.application.domain

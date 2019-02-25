@@ -1,15 +1,3 @@
-class << Rails.application
-  def domain
-    "news.gatheringlab.com"
-  end
-
-  def name
-    "Gathering News"
-  end
-end
-
-Rails.application.routes.default_url_options[:host] = Rails.application.domain
-
 if Rails.env.production?
   Lobsters::Application.config.middleware.use ExceptionNotification::Rack,
     :ignore_exceptions => [
