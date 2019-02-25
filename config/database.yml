@@ -2,7 +2,7 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   reconnect: false
-  url: <%= ENV.fetch('JAWSDB_MARIA_URL') %>
+  url: <%= ENV.fetch('DATABASE_URL') %>
 
 test:
   <<: *default
