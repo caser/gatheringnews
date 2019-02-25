@@ -54,3 +54,5 @@ group :test, :development do
   gem "byebug"
   gem "rb-readline"
 end
+
+gem 'scout_apm'

@@ -85,11 +85,11 @@ class << Rails.application
   end
 
   def domain
-    "example.com"
+    "news.gatheringlab.com"
   end
 
   def name
-    "Lobsters"
+    "Gathering News"
   end
 
   # to force everyone to be considered logged-out (without destroying
